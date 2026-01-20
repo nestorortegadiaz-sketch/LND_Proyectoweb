@@ -28,7 +28,7 @@
 
 .menu>li {
     position: relative;
-    /* necesario para el submenu */
+    margin-left: -41%;
 }
 
 .menu>li>a {
@@ -47,7 +47,6 @@
     display: none;
     position: absolute;
     top: 100%;
-    /* debajo del menú padre */
     left: 0;
     list-style: none;
     padding: 0;
