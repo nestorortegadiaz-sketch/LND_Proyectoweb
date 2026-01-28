@@ -87,6 +87,7 @@ header {
 .menu>li.dropdown>a::before {
   content: "▼";
   font-size: 12px;
+  margin-right: 8px;
 }
 
 .inicio {
@@ -318,6 +319,13 @@ header {
 
   .menu>li {
     margin-left: 0;
+  }
+  /* Mostrar submenú al hacer hover */
+  .menu>li.dropdown:hover .submenu {
+    display: block;
+    top: 100%;
+    left: -25%;
+    text-align: center;
   }
 
   .card {
