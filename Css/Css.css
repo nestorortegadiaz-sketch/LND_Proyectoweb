@@ -213,6 +213,7 @@ header {
   font-size: 16px;
   color: #555;
 }
+
 .card i {
   width: 70px;
   height: 70px;
@@ -281,6 +282,40 @@ header {
   color: #555;
 }
 
+.carrusel {
+  width: 100%;
+  max-width: 500px;
+  margin: 40px auto;
+  overflow: hidden;
+ border-radius: 12px;
+}
+.carrusel-seccion h2{
+  text-align: center;
+}
+
+.carrusel-track {
+  display: flex;
+  width: 800%;
+  animation: carruselSteps 48s steps(8) infinite;
+}
+
+.carrusel-track img {
+  width: 100%;
+  height: 240px;
+  object-fit: contain;
+}
+
+
+@keyframes carruselSteps {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-700%);
+  }
+}
+
 
 .footer {
   color: white;
@@ -320,6 +355,7 @@ header {
   .menu>li {
     margin-left: 0;
   }
+
   /* Mostrar submenú al hacer hover */
   .menu>li.dropdown:hover .submenu {
     display: block;
