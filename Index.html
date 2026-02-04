@@ -23,9 +23,9 @@
                     <a href="#">Menú</a>
                     <ul class="submenu">
                         <li><a href="index.html">Inicio</a></li>
-                        <li><a href="#clases">Clases</a></li>
+                        <li><a href="#servicios">Clases</a></li>
                         <li><a href="#profesores">Profesores</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
                     </ul>
                 </li>
             </ul>
@@ -158,6 +158,37 @@
             </tbody>
         </table>
     </section>
+    <section class="contacto" id="contacto">
+  <h2>Contacto</h2>
+
+  <form class="formulario-contacto">
+    
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Tu email" required>
+
+    <label for="asignatura">Asignatura</label>
+    <select id="asignatura" name="asignatura" required>
+      <option value="">Selecciona una asignatura</option>
+      <option value="matematicas">Matemáticas</option>
+      <option value="ingles">Inglés</option>
+      <option value="lengua">Lengua</option>
+    </select>
+
+    <label for="modalidad">Modalidad</label>
+    <select id="modalidad" name="modalidad" required>
+      <option value="">Selecciona una modalidad</option>
+      <option value="online">Online</option>
+      <option value="presencial">Presencial</option>
+    </select>
+
+    <button type="submit">Enviar</button>
+
+  </form>
+</section>
+
 
 
     <footer class="footer">

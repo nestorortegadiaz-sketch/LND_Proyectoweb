@@ -296,7 +296,7 @@ header {
 .carrusel-track {
   display: flex;
   width: 800%;
-  animation: carruselSteps 60s steps(8) infinite;
+  animation: carruselSteps 180s linear infinite;
 }
 
 .carrusel-track img {
@@ -311,11 +311,11 @@ header {
   from {
     transform: translateX(0);
   }
-
   to {
     transform: translateX(-700%);
   }
 }
+
 
 .servicios {
   padding: 60px 20px;
@@ -351,6 +351,56 @@ header {
 .tabla-servicios tr:nth-child(even) {
   background-color: #f9f9f9;
 }
+.contacto {
+  padding: 60px 20px;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.contacto h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.formulario-contacto {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formulario-contacto label {
+  text-align: left;
+  font-weight: bold;
+}
+
+.formulario-contacto input,
+.formulario-contacto select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.formulario-contacto button {
+  margin-top: 10px;
+  padding: 12px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.formulario-contacto button:hover {
+  background-color: #2980b9;
+}
+
 
 .footer {
   color: white;
