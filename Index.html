@@ -42,7 +42,7 @@
         <div class="inicio-content">
             <h1>Aprende con Profesores Expertos</h1>
             <p>Clases particulares a tu medida, online o presenciales</p>
-            <a href="#clases" class="btn">Ver Clases</a>
+            <a href="#servicios" class="btn">Ver Clases</a>
         </div>
     </section>
 
@@ -121,6 +121,15 @@
                     <img src="Img/Carrusel/pexels-max-fischer-5212336.jpg" alt="Carrusel6">
                     <img src="Img/Carrusel/pexels-max-fischer-5212345.jpg" alt="Carrusel7">
                     <img src="Img/Carrusel/pexels-olia-danilevich-5088013.jpg" alt="Carrusel8">
+                    <!--Duplicadas -->
+                     <img src="Img/Carrusel/pexels-divinetechygirl-1181534.jpg" alt="Carrusel1">
+                    <img src="Img/Carrusel/pexels-katerina-holmes-5905445.jpg" alt="Carrusel2">
+                    <img src="Img/Carrusel/pexels-max-fischer-5211478.jpg" alt="Carrusel3">
+                    <img src="Img/Carrusel/pexels-max-fischer-5212320.jpg" alt="Carrusel4">
+                    <img src="Img/Carrusel/pexels-max-fischer-5212335.jpg" alt="Carrusel5">
+                    <img src="Img/Carrusel/pexels-max-fischer-5212336.jpg" alt="Carrusel6">
+                    <img src="Img/Carrusel/pexels-max-fischer-5212345.jpg" alt="Carrusel7">
+                    <img src="Img/Carrusel/pexels-olia-danilevich-5088013.jpg" alt="Carrusel8">
                 </div>
             </div>
         </div>
@@ -159,35 +168,35 @@
         </table>
     </section>
     <section class="contacto" id="contacto">
-  <h2>Contacto</h2>
+        <h2>Contacto</h2>
 
-  <form class="formulario-contacto">
-    
-    <label for="nombre">Nombre</label>
-    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+        <form class="formulario-contacto">
 
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" placeholder="Tu email" required>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
 
-    <label for="asignatura">Asignatura</label>
-    <select id="asignatura" name="asignatura" required>
-      <option value="">Selecciona una asignatura</option>
-      <option value="matematicas">Matemáticas</option>
-      <option value="ingles">Inglés</option>
-      <option value="lengua">Lengua</option>
-    </select>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Tu email" required>
 
-    <label for="modalidad">Modalidad</label>
-    <select id="modalidad" name="modalidad" required>
-      <option value="">Selecciona una modalidad</option>
-      <option value="online">Online</option>
-      <option value="presencial">Presencial</option>
-    </select>
+            <label for="asignatura">Asignatura</label>
+            <select id="asignatura" name="asignatura" required>
+                <option value="">Selecciona una asignatura</option>
+                <option value="matematicas">Matemáticas</option>
+                <option value="ingles">Inglés</option>
+                <option value="lengua">Lengua</option>
+            </select>
 
-    <button type="submit">Enviar</button>
+            <label for="modalidad">Modalidad</label>
+            <select id="modalidad" name="modalidad" required>
+                <option value="">Selecciona una modalidad</option>
+                <option value="online">Online</option>
+                <option value="presencial">Presencial</option>
+            </select>
 
-  </form>
-</section>
+            <button type="submit">Enviar</button>
+
+        </form>
+    </section>
 
 
 
@@ -207,6 +216,19 @@
             </a>
         </div>
     </footer>
+    <script>
+        const carrusel = document.querySelector(".carrusel-track");
+
+        carrusel.addEventListener("mouseover", () => {
+            carrusel.style.animationPlayState = "paused";
+        });
+
+        carrusel.addEventListener("mouseout", () => {
+            carrusel.style.animationPlayState = "running";
+        });
+    </script>
+
+
 </body>
 
 </html>
