@@ -8,6 +8,9 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+/* =========================
+   HEADER / NAV
+========================= */
 header {
   position: sticky;
   top: 0;
@@ -90,6 +93,9 @@ header {
   margin-right: 8px;
 }
 
+/* =========================
+   HERO / INICIO
+========================= */
 .inicio {
   position: relative;
   height: 60vh;
@@ -154,6 +160,9 @@ header {
   background-color: #f1c40f;
 }
 
+/* =========================
+   COMO FUNCIONA
+========================= */
 .como-funciona {
   padding: 80px 20px;
   background-color: #f5f5f5;
@@ -227,6 +236,9 @@ header {
   margin: 0 auto 20px;
 }
 
+/* =========================
+   PROFESORES
+========================= */
 
 .galeria-profesores {
   padding: 60px 20px;
@@ -282,14 +294,17 @@ header {
   color: #555;
 }
 
+/* =========================
+   SERVICIOS
+========================= */
 .carrusel {
+  max-width: 1000px margin 0 auto;
   overflow: hidden;
 }
 
 .carrusel-track {
   display: flex;
   gap: 20px;
-  width: max-content;
   animation: scrollInfinito 40s linear infinite;
 }
 
@@ -297,12 +312,14 @@ header {
   width: 500px;
   height: 600px;
   object-fit: cover;
+  flex-shrink: 0;
 }
 
 @keyframes scrollInfinito {
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(-50%);
   }
@@ -325,6 +342,7 @@ header {
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
+  margin-bottom: 50px;
   border-collapse: collapse;
   background-color: white;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -345,10 +363,20 @@ header {
   background-color: #f9f9f9;
 }
 
+.tabla-servicios i {
+  margin-right: 8px;
+  color: #3498db;
+}
+
+/* =========================
+   CONTACTO
+========================= */
+
 .contacto {
   padding: 60px 20px;
-  background-color: #f5f5f5;
+  background-color: white;
   text-align: center;
+  display: flex;
 }
 
 .contacto h2 {
@@ -366,6 +394,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  flex: 1 1 400px;
 }
 
 .formulario-contacto label {
@@ -395,6 +424,9 @@ header {
   background-color: #2980b9;
 }
 
+/* =========================
+   FOOTER
+========================= */
 
 .footer {
   color: white;
@@ -414,6 +446,19 @@ header {
   padding-bottom: 15px;
 }
 
+.Rss {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  flex: 1 1 400px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
 /* TABLET */
 @media (max-width: 1024px) {
   .card {
@@ -422,6 +467,9 @@ header {
 
   .inicio-content h1 {
     font-size: 36px;
+  }
+  .contacto {
+    display: block;
   }
 }
 
@@ -453,5 +501,8 @@ header {
 
   .inicio-content h1 {
     font-size: 28px;
+  }
+  .contacto {
+    display: block;
   }
 }
