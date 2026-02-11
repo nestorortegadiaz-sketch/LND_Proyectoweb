@@ -191,6 +191,29 @@ header {
   font-size: 18px;
 }
 
+/* =========================
+   Lista
+========================= */
+.ventajas {
+  max-width: 500px;
+  margin: 20px auto;
+  text-align: center;
+  list-style: none;
+}
+
+.ventajas li {
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.ventajas li:hover {
+  color: #3498db;
+  transform: translateX(8px);
+}
+
+
+
 /* Contenedor de cards */
 .cards {
   display: flex;
@@ -395,6 +418,7 @@ header {
   flex-direction: column;
   gap: 15px;
   flex: 1 1 400px;
+  margin-bottom: 20px;
 }
 
 .formulario-contacto label {
@@ -446,6 +470,21 @@ header {
   padding-bottom: 15px;
 }
 
+.footer .ministerio {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.footer .ministerio a {
+  color: #f1c40f;
+  text-decoration: none;
+}
+
+.footer .ministerio a:hover {
+  text-decoration: underline;
+}
+
+
 .Rss {
   max-width: 500px;
   margin: 0 auto;
@@ -468,6 +507,7 @@ header {
   .inicio-content h1 {
     font-size: 36px;
   }
+
   .contacto {
     display: block;
   }
@@ -502,6 +542,7 @@ header {
   .inicio-content h1 {
     font-size: 28px;
   }
+
   .contacto {
     display: block;
   }
