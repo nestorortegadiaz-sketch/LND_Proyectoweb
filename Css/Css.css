@@ -195,16 +195,18 @@ header {
    Lista
 ========================= */
 .ventajas {
-  max-width: 500px;
-  margin: 20px auto;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
   list-style: none;
+  padding: 0;
+  margin-bottom: 50px;
 }
 
 .ventajas li {
-  margin-bottom: 10px;
-  transition: all 0.3s ease;
-  cursor: pointer;
+  background-color: #f5f5f5;
+  padding: 10px 20px;
+  border-radius: 20px;
 }
 
 .ventajas li:hover {
@@ -260,7 +262,7 @@ header {
 }
 
 /* =========================
-   PROFESORES
+   Galeria-Profesores
 ========================= */
 
 .galeria-profesores {
@@ -318,7 +320,7 @@ header {
 }
 
 /* =========================
-   SERVICIOS
+   Carrusel
 ========================= */
 .carrusel {
   max-width: 1000px margin 0 auto;
@@ -348,6 +350,9 @@ header {
   }
 }
 
+/* =========================
+   SERVICIOS
+========================= */
 
 
 .servicios {
@@ -360,6 +365,19 @@ header {
   font-size: 32px;
   margin-bottom: 30px;
 }
+
+/* =========================
+   Resaltado Tabla
+========================= */
+
+.resaltado {
+  background-color: #fff3cd !important;
+  transition: background-color 0.3s ease;
+}
+
+/* =========================
+  Tabla
+========================= */
 
 .tabla-servicios {
   width: 100%;
@@ -375,6 +393,7 @@ header {
 .tabla-servicios td {
   padding: 15px;
   border: 1px solid #ddd;
+  width: 21%;
 }
 
 .tabla-servicios th {
@@ -407,6 +426,9 @@ header {
   margin-bottom: 30px;
 }
 
+/* =========================
+   Formulario
+========================= */
 .formulario-contacto {
   max-width: 500px;
   margin: 0 auto;
@@ -484,6 +506,24 @@ header {
   text-decoration: underline;
 }
 
+.volver-arriba {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #3498db;
+  color: white;
+  padding: 12px 15px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 18px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.volver-arriba:hover {
+  background-color: #2980b9;
+}
+
 
 .Rss {
   max-width: 500px;
@@ -545,5 +585,11 @@ header {
 
   .contacto {
     display: block;
+  }
+
+  .ventajas {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
   }
 }

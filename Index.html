@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Img/Carrusel/pexels-olia-danilevich-5088013.jpg" type="image/png">
+    <meta name="description" content="Clases particulares online y presenciales. Profesores titulados.">
     <link rel="stylesheet" href="Css/Css.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -87,7 +89,7 @@
 
         <div class="galeria">
 
-            <figure class="profesor">
+            <figure class="profesor" data-materia="fila-matematicas">
                 <img src="Img/joven-hombre-barbudo-camisa-rayas_273609-5677.avif" alt="Profesor de Matemáticas">
                 <figcaption>
                     <h3>Ricardo López</h3>
@@ -95,7 +97,7 @@
                 </figcaption>
             </figure>
 
-            <figure class="profesor">
+            <figure class="profesor" data-materia="fila-ingles">
                 <img src="Img/images.jpg" alt="Profesor de Inglés">
                 <figcaption>
                     <h3>Carlos Martín</h3>
@@ -103,14 +105,13 @@
                 </figcaption>
             </figure>
 
-            <figure class="profesor">
+            <figure class="profesor" data-materia="fila-lengua">
                 <img src="Img/1600w-7MtFJrVplss.webp" alt="Profesor de Informática">
                 <figcaption>
                     <h3>Lorenzo Gómez</h3>
                     <p>Licenciado en Lengua Castellana. Logopeda</p>
                 </figcaption>
             </figure>
-
         </div>
     </section>
     <section class="servicios" id="servicios">
@@ -127,25 +128,22 @@
                 </tr>
             </thead>
 
-
             <tbody>
-                <tr>
+                <tr id="fila-matematicas">
                     <td><i class="fa-solid fa-calculator"></i> Matemáticas</td>
                     <td>Primaria / ESO / Bachillerato</td>
                     <td>Online y Presencial</td>
                     <td>Lunes a Viernes<br>16:00 - 20:00</td>
                     <td>15€/hora</td>
                 </tr>
-
-                <tr>
+                <tr id="fila-ingles">
                     <td><i class="fa-solid fa-globe"></i> Inglés</td>
                     <td>Todos los niveles</td>
                     <td>Online y Presencial</td>
                     <td>Lunes a Jueves<br>17:00 - 21:00</td>
                     <td>18€/hora</td>
                 </tr>
-
-                <tr>
+                <tr id="fila-lengua">
                     <td><i class="fa-solid fa-pen"></i> Lengua</td>
                     <td>Primaria y ESO</td>
                     <td>Presencial</td>
@@ -153,9 +151,7 @@
                     <td>14€/hora</td>
                 </tr>
             </tbody>
-
         </table>
-
 
         <div class="servicios-contenido">
 
@@ -221,7 +217,6 @@
         </div>
     </section>
 
-
     <footer class="footer">
         <p>© 2026 ClasesConHDHugo | Todos los derechos reservados</p>
         <div>
@@ -245,18 +240,11 @@
             </a>
         </p>
     </footer>
-    <script>
-        const carrusel = document.querySelector(".carrusel-track");
-
-        carrusel.addEventListener("mouseover", () => {
-            carrusel.style.animationPlayState = "paused";
-        });
-
-        carrusel.addEventListener("mouseout", () => {
-            carrusel.style.animationPlayState = "running";
-        });
-    </script>
-
+    <!-- BOTÓN VOLVER ARRIBA -->
+    <a href="#" class="volver-arriba">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+    <script src="Js/jscript.js"></script>
 
 </body>
 
