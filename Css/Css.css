@@ -487,6 +487,16 @@ header {
   text-decoration: none;
 }
 
+.footer .social-container a {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.footer .social-container a:hover {
+  transform: scale(1.30);
+  color: #f1c40f;
+}
+
 .footer p {
   padding-bottom: 15px;
 }
