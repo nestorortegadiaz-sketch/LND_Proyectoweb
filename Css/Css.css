@@ -209,13 +209,6 @@ header {
   border-radius: 20px;
 }
 
-.ventajas li:hover {
-  color: #3498db;
-  transform: translateX(8px);
-}
-
-
-
 /* Contenedor de cards */
 .cards {
   display: flex;
@@ -378,12 +371,14 @@ header {
 /* =========================
   Tabla
 ========================= */
+.contenedor-tabla {
+  overflow-x: scroll;
+}
 
 .tabla-servicios {
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
-  margin-bottom: 50px;
   border-collapse: collapse;
   background-color: white;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -408,6 +403,10 @@ header {
 .tabla-servicios i {
   margin-right: 8px;
   color: #3498db;
+}
+
+.servicios-contenido {
+  margin-top: 50px;
 }
 
 /* =========================
@@ -513,11 +512,14 @@ header {
   background-color: #3498db;
   color: white;
   padding: 12px 15px;
+  border: none;
   border-radius: 50%;
+  border-color: #2980b9;
   text-decoration: none;
   font-size: 18px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease;
+  cursor: pointer;
 }
 
 .volver-arriba:hover {

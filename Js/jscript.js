@@ -23,3 +23,10 @@ profesores.forEach(profesor => {
         document.getElementById(filaId).classList.remove("resaltado");
     });
 });
+
+document.getElementById("btn-up").addEventListener("click", function() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
