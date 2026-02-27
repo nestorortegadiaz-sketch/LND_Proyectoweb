@@ -371,10 +371,6 @@ header {
 /* =========================
   Tabla
 ========================= */
-.contenedor-tabla {
-  overflow-x: scroll;
-}
-
 .tabla-servicios {
   width: 100%;
   max-width: 800px;
@@ -604,4 +600,9 @@ header {
     align-items: center;
     gap: 15px;
   }
+  
+  .contenedor-tabla {
+    overflow-x: scroll;
+  }
+
 }

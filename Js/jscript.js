@@ -1,5 +1,5 @@
 
-const carrusel = document.querySelector(".carrusel-track");
+const carrusel = document.getElementsByClassName("carrusel-track")[0];
 
 carrusel.addEventListener("mouseover", () => {
     carrusel.style.animationPlayState = "paused";
@@ -10,16 +10,16 @@ carrusel.addEventListener("mouseout", () => {
 });
 
 
-const profesores = document.querySelectorAll(".profesor");
+const profesores = document.getElementsByClassName("profesor");
 
-profesores.forEach(profesor => {
-    profesor.addEventListener("mouseenter", () => {
-        const filaId = profesor.getAttribute("data-materia");
+Array.from(profesores).forEach(function (profesor) {
+    profesor.addEventListener("mouseenter", function () {
+        const filaId = this.getAttribute("data-materia");
         document.getElementById(filaId).classList.add("resaltado");
     });
 
-    profesor.addEventListener("mouseleave", () => {
-        const filaId = profesor.getAttribute("data-materia");
+    profesor.addEventListener("mouseleave", function () {
+        const filaId = this.getAttribute("data-materia");
         document.getElementById(filaId).classList.remove("resaltado");
     });
 });
